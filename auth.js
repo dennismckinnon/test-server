@@ -8,6 +8,8 @@ var algorithm = 'aes-256-ctr';
 
 var mysecret = "itsasecret";
 
+exports.mysecret = mysecret;
+
 exports.fromQuerystring = function(req) {
     if (req.query && req.query.token) {
       return req.query.token;
